@@ -106,6 +106,39 @@ build Array.exe: CXX_EXECUTABLE_LINKER__Array_Debug CMakeFiles/Array.dir/Array.c
   TARGET_IMPLIB = libArray.dll.a
   TARGET_PDB = Array.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target L-search
+
+
+#############################################
+# Order-only phony target for L-search
+
+build cmake_object_order_depends_target_L-search: phony || CMakeFiles/L-search.dir
+
+build CMakeFiles/L-search.dir/L-search.cpp.obj: CXX_COMPILER__L-search_unscanned_Debug C$:/Users/roy15/CLionProjects/Algorithms/L-search.cpp || cmake_object_order_depends_target_L-search
+  DEP_FILE = CMakeFiles\L-search.dir\L-search.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\L-search.dir
+  OBJECT_FILE_DIR = CMakeFiles\L-search.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target L-search
+
+
+#############################################
+# Link the executable L-search.exe
+
+build L-search.exe: CXX_EXECUTABLE_LINKER__L-search_Debug CMakeFiles/L-search.dir/L-search.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\L-search.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = L-search.exe
+  TARGET_IMPLIB = libL-search.dll.a
+  TARGET_PDB = L-search.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build Algorithms: phony Algorithms.exe
 
 build Array: phony Array.exe
 
+build L-search: phony L-search.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build Array: phony Array.exe
 #############################################
 # Folder: C:/Users/roy15/CLionProjects/Algorithms/cmake-build-debug
 
-build all: phony Algorithms.exe Array.exe
+build all: phony Algorithms.exe Array.exe L-search.exe
 
 # =============================================================================
 # Built-in targets
