@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/* In terms of time complexity:
+/* In terms of time complexity: -
 
 Worst Case: O(n) - In the worst case, where the key is not present or is at the last position, the algorithm needs to iterate through the entire array of size n.
 
