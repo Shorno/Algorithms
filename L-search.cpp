@@ -1,24 +1,17 @@
 #include <iostream>
 using namespace std;
 
-//In terms of time complexity:
-//
-//Worst Case: O(n) - In the worst case, where the key is not present or is at the last position, the algorithm needs to iterate through the entire array of size n.
-//
-//Best Case: O(1) - In the best case, where the key is found at the first position, the algorithm requires only one iteration.
-//
-//Average Case: O(n/2) - On average, the algorithm may need to search half of the array, so the average time complexity is approximately O(n/2). However, in big-O notation, constants are usually dropped, so we simply say the average time complexity is O(n).
-//
-//Linear search has a linear time complexity because the number of operations grows linearly with the size of the input array.
-//
+/*
+In terms of time complexity:
 
+Worst Case: O(n) - In the worst case, where the key is not present or is at the last position, the algorithm needs to iterate through the entire array of size n.
 
+Best Case: O(1) - In the best case, where the key is found at the first position, the algorithm requires only one iteration.
 
+Average Case: O(n/2) - On average, the algorithm may need to search half of the array, so the average time complexity is approximately O(n/2). However, in big-O notation, constants are usually dropped, so we simply say the average time complexity is O(n).
 
-
-
-
-
+Linear search has a linear time complexity because the number of operations grows linearly with the size of the input array.
+*/
 
 
 // Function to perform linear search
